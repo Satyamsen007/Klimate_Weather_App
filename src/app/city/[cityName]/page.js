@@ -1,3 +1,5 @@
+'use client';
+
 import CityPage from '@/pages/CityPage';
 
 const Page = ({ params }) => {

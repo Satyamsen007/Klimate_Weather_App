@@ -7,11 +7,10 @@ import WeatherDetails from '@/components/customcomponents/main/WeatherDetails';
 import WeatherForecast from '@/components/customcomponents/main/WeatherForecast';
 import LoadingSkeleton from '@/components/customcomponents/skeletons/LoadingSkeleton';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
-import { Button } from '@/components/ui/button';
 import { useForecastQuery, useWeatherQuery } from '@/hooks/use-weather';
 import { AlertTriangle, RefreshCw } from 'lucide-react';
 import { useSearchParams } from 'next/navigation';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import React from 'react';
 
 // Animation variants
