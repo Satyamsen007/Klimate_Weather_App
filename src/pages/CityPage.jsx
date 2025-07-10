@@ -12,6 +12,7 @@ import { AlertTriangle, RefreshCw } from 'lucide-react';
 import { useSearchParams } from 'next/navigation';
 import { motion } from 'framer-motion';
 import React from 'react';
+import dynamic from 'next/dynamic';
 
 // Animation variants
 const containerVariants = {
@@ -100,4 +101,4 @@ const CityPage = ({ cityName }) => {
   )
 }
 
-export default CityPage;
+export default dynamic(() => Promise.resolve(CityPage), { ssr: false });

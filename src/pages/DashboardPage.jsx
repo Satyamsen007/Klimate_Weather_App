@@ -12,6 +12,7 @@ import { useGeolocation } from '@/hooks/use-geolocation'
 import { useForecastQuery, useReverseGeoCodeQuery, useWeatherQuery } from '@/hooks/use-weather';
 import { AlertTriangle, MapPin, RefreshCw } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion';
+import dynamic from 'next/dynamic';
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -163,4 +164,4 @@ const DashboardPage = () => {
   )
 }
 
-export default DashboardPage;
+export default dynamic(() => Promise.resolve(DashboardPage), { ssr: false });
