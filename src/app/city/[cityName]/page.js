@@ -2,8 +2,9 @@
 
 import CityPage from '@/pages/CityPage';
 
+export const dynamic = 'force-dynamic';
+
 const Page = ({ params }) => {
-  // Decode the city name from the URL
   const decodedCityName = decodeURIComponent(params.cityName);
 
   return (
