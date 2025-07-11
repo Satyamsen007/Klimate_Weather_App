@@ -84,7 +84,7 @@ We welcome contributions from the community! Here’s how you can get started:
 
 ```bash
 kilimate-weather-app/
-├── next         # React frontend (Vite or CRA)
+├── next    
 ├── public
 ├── src/
 │   ├── app/
