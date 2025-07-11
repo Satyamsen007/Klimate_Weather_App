@@ -88,10 +88,10 @@ kilimate-weather-app/
 ├── public
 ├── src/
 │   ├── app/
-│   │   ├── components
-│   │   ├── hooks
-│   │   ├── lib/api
-│   │   ├── pages
+│   ├── components
+│   ├── hooks
+│   ├── lib
+│   ├── pages
 ├── .env
 ├── .gitignore
 ├── next.config.mjs
